@@ -1,0 +1,2 @@
+!function(e){Drupal.behaviors.fullWidthSliderInit={attach:function(i){"undefined"!=typeof e.fn.owlCarousel&&e(".view-id-sliders .view-content").owlCarousel({items:1,nav:!1,pagination:!1,margin:0,responsiveClass:!0,loop:e(".view-id-sliders .view-content .views-row").length>1,autoWidth:!1,autoplay:!0,autoplayTimeout:5e3,smartSpeed:450,autoplayHoverPause:!0})}}}(jQuery);
+//# sourceMappingURL=maps/fulWidthSliderInit.js.map

@@ -1,0 +1,243 @@
+#simplenews-admin-filter {
+  .form-item {
+    line-height: 1.75em;
+
+    clear: both;
+
+    margin: 0 1em 0 0;
+    label {
+      float: left;
+
+      width: 12em;
+    }
+  }
+  .spacer {
+    margin-left: 12em;
+  }
+  .form-select,
+  .form-text {
+    width: 14em;
+  }
+}
+
+.block-simplenews {
+  .issues-link {
+    margin-top: 1em;
+  }
+  .issues-list {
+    margin-top: 1em;
+    .newsletter-created {
+      display: none;
+    }
+  }
+}
+
+.field .field-label {
+  font-weight: bold;
+}
+
+.field-label-inline {
+  .field-label,
+  .field-items {
+    float: left;
+  }
+}
+
+form {
+  .field-multiple-table {
+    margin: 0;
+    th.field-label {
+      padding-left: 0;
+    }
+    td.field-multiple-drag {
+      width: 30px;
+      padding-right: 0;
+      a.tabledrag-handle {
+        padding-right: .5em;
+      }
+    }
+  }
+  .field-add-more-submit {
+    margin: .5em 0 0;
+  }
+}
+
+.node-unpublished {
+  background-color: #fff4f4;
+}
+
+.preview .node {
+  background-color: #ffffea;
+}
+
+td.revision-current {
+  background: #ffc;
+}
+
+#permissions {
+  td {
+    &.module {
+      font-weight: bold;
+    }
+    &.permission {
+      padding-left: 1.5em;
+    }
+  }
+  tr {
+    &.odd .form-item,
+    &.even .form-item {
+      white-space: normal;
+    }
+  }
+}
+
+#user-admin-settings fieldset .fieldset-description {
+  font-size: .85em;
+
+  padding-bottom: .5em;
+}
+
+#user-admin-roles {
+  td.edit-name {
+    clear: both;
+  }
+  .form-item-name {
+    float: left;
+
+    margin-right: 1em;
+  }
+}
+
+.password-strength {
+  float: right;
+
+  width: 17em;
+  margin-top: 1.4em;
+}
+
+.password-strength-title {
+  display: inline;
+}
+
+.password-strength-text {
+  font-weight: bold;
+
+  float: right;
+}
+
+.password-indicator {
+  width: 100%;
+  height: .3em;
+
+  background-color: #c4c4c4;
+  div {
+    width: 0;
+    height: 100%;
+
+    background-color: #47c965;
+  }
+}
+
+input {
+  &.password-confirm,
+  &.password-field {
+    width: 16em;
+    margin-bottom: .4em;
+  }
+}
+
+div {
+  &.password-confirm {
+    visibility: hidden;
+    float: right;
+
+    width: 17em;
+    margin-top: 1.5em;
+  }
+  &.form-item div.password-suggestions {
+    width: 38.5em;
+    margin: .7em 0;
+    padding: .2em .5em;
+
+    border: 1px solid #b4b4b4;
+  }
+  &.password-suggestions ul {
+    margin-bottom: 0;
+  }
+}
+
+.confirm-parent,
+.password-parent {
+  clear: left;
+
+  width: 36.3em;
+  margin: 0;
+}
+
+.profile {
+  clear: both;
+
+  margin: 1em 0;
+  .user-picture {
+    float: right;
+
+    margin: 0 1em 1em 0;
+  }
+  h3 {
+    border-bottom: 1px solid #ccc;
+  }
+  dl {
+    margin: 0 0 1.5em 0;
+  }
+  dt {
+    font-weight: bold;
+
+    margin: 0 0 .2em 0;
+  }
+  dd {
+    margin: 0 0 1em 0;
+  }
+}
+
+.views-exposed-form {
+  .views-exposed-widget {
+    float: left;
+
+    padding: .5em 1em 0 0;
+    .form-submit {
+      margin-top: 1.6em;
+    }
+  }
+  .form-item,
+  .form-submit {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  label {
+    font-weight: bold;
+  }
+}
+
+.views-exposed-widgets {
+  margin-bottom: .5em;
+}
+
+.views-align-left {
+  text-align: left;
+}
+
+.views-align-right {
+  text-align: right;
+}
+
+.views-align-center {
+  text-align: center;
+}
+
+.views-view-grid tbody {
+  border-top: none;
+}
+
+.view .progress-disabled {
+  float: none;
+}

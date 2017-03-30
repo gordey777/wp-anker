@@ -1,0 +1,1161 @@
+/**
+ *
+ */
+
+tr {
+  &.category-disabled {
+    font-style: italic;
+
+    color: #bebfb9;
+    a {
+      font-style: italic;
+
+      color: #bebfb9;
+    }
+  }
+  &.product-disabled {
+    font-style: italic;
+
+    color: #bebfb9;
+    a {
+      font-style: italic;
+
+      color: #bebfb9;
+    }
+    td {
+      background: #efefef !important;
+    }
+    &:HOVER {
+      color: black !important;
+      td {
+        background: #cdcdcd !important;
+      }
+      a {
+        color: black !important;
+      }
+    }
+  }
+  &.child-marker-1 {
+    td {
+      background: rgba(255, 242, 204, .55) !important;
+    }
+    &:HOVER td {
+      background: rgba(255, 217, 102, 1) !important;
+    }
+    td.views-field-title {
+      font-size: 90%;
+      font-style: italic;
+
+      padding-left: 25px;
+    }
+    &.level-1 td.views-field-title {
+      padding-left: 50px;
+    }
+  }
+  &.status-0 {
+    color: #bebfb9;
+    a {
+      color: #bebfb9;
+    }
+  }
+}
+
+/**/
+
+ul {
+  &.beeshop-catalog-menu ul li a {
+    color: gray;
+  }
+  &.beeshop-catalog-menu-root > li > a {
+    font-weight: bold;
+
+    margin: 5px;
+  }
+}
+
+/**/
+
+#edit-sub-products .ctools-button-processed {
+  font-size: 12px;
+
+  position: absolute;
+  top: 7px;
+  right: 12px;
+}
+
+#sub-products-list td.actions {
+  position: relative;
+}
+
+/**/
+
+/**/
+/* @group Buttons */
+
+.ctools-button-processed {
+  font-size: 11px;
+
+  padding-top: 2px;
+  padding-bottom: 2px;
+
+  border-color: #ccc;
+  background-color: #fff;
+  &:hover {
+    border-color: #b8b8b8;
+  }
+  &:active {
+    border-color: #a0a0a0;
+  }
+  .ctools-content {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.ctools-dropbutton-processed {
+  position: absolute;
+  .ctools-content {
+    border-right: 1px solid #e8e8e8;
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.ctools-content ul.actions {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.ctools-button-processed .ctools-content a {
+  border: medium none;
+  background-image: none;
+}
+
+.ctools-dropbutton-processed {
+  &.open {
+    z-index: 100;
+    &:hover {
+      border-color: #d0d0d0;
+    }
+  }
+  .ctools-link {
+    border-left: 1px solid #fff;
+  }
+  &.open .ctools-content {
+    padding-bottom: 4px;
+  }
+  li {
+    a,
+    input {
+      padding-right: 9px;
+    }
+  }
+  &.open li + li {
+    margin-top: 4px;
+    padding-top: 4px;
+    padding-bottom: 0;
+
+    border-top: 1px solid #efefef;
+  }
+}
+
+.ctools-twisty:focus {
+  outline: medium none;
+}
+
+.ctools-no-js .ctools-content ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+#edit-sub-products .ctools-button-processed {
+  font-size: 12px;
+
+  position: absolute;
+  position: absolute;
+  top: 7px;
+  top: 4px;
+  right: 12px;
+  right: 5px;
+  li a,
+  input {
+    font-family: inherit;
+    font-size: 12px;
+
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 12px;
+
+    border: medium;
+    background: none;
+  }
+}
+
+.views-ui-display-tab-actions .ctools-button-processed input:hover {
+  background: none;
+}
+
+/* @end */
+
+/* @group Collapsible */
+
+.ctools-toggle {
+  display: inline-block;
+  float: left;
+
+  width: 0;
+  height: 0;
+  margin-top: .4545em;
+  margin-right: 2px;
+
+  border-width: 5px 5px 0;
+  border-style: solid;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  &.ctools-toggle-collapsed {
+    margin-top: .3333em;
+    margin-right: 5px;
+    margin-left: 2px;
+
+    border-width: 5px 0 5px 5px;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left: 4px solid;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.ctools-collapsible-handle:hover {
+  cursor: pointer;
+}
+
+.ctools-export-ui-row {
+  margin-bottom: 0;
+  padding-top: 0;
+  label {
+    display: block;
+    float: left;
+
+    width: 55px;
+  }
+}
+
+.views-display-settings .ctools-toggle {
+  color: #000;
+}
+
+.views-display-column > {
+  .ctools-toggle {
+    margin-top: 10px;
+    margin-right: 3px;
+    margin-left: 6px;
+    &.ctools-toggle-collapsed {
+      margin-top: 8px;
+      margin-right: 5px;
+      margin-left: 9px;
+    }
+  }
+  .ctools-collapsible-handle {
+    font-size: 13px;
+    font-weight: normal;
+
+    margin: 0;
+    padding: 6px 3px;
+
+    border-width: 1px 1px 0;
+    border-style: solid;
+    border-color: #f3f3f3;
+  }
+  .ctools-toggle.ctools-toggle-collapsed + .ctools-collapsible-handle {
+    border-width: 1px;
+  }
+  .ctools-collapsible-content > .views-ui-display-tab-bucket:first-child {
+    border-top: medium none;
+  }
+}
+
+h2.ctools-collapsible-handle {
+  display: inline;
+  clear: both;
+}
+
+/* @end */
+
+/* @group Dependent */
+
+.dependent-options {
+  margin-left: 18px;
+  /* LTR */
+}
+
+/* @end */
+
+/* @group Export */
+
+/* Override for filter button on the views list screen */
+
+#ctools-export-ui-list-form .form-submit {
+  margin-top: 0 !important;
+  margin-right: 0;
+}
+
+.ctools-export-ui-row + .ctools-export-ui-row {
+  margin-top: 1em;
+}
+
+.ctools-export-ui-fourth-row input {
+  margin-top: 5px !important;
+}
+
+/* @end */
+
+/* @group Jump list */
+
+#views-live-preview .ctools-jump-menu-select {
+  max-width: 450px;
+}
+
+/**
+ * The .seven.css file is intended to contain styles that override declarations
+ * in the Seven admin theme.
+ */
+
+/* @group Content */
+
+.views-ui-display-tab-bucket {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+/* @end */
+
+/* @group Forms */
+
+/**
+ * Seven positions the legend absolutely, but does not have a way to ignore
+ * fieldsets without a legend so we make one up.
+ */
+
+fieldset.fieldset-no-legend {
+  padding-top: 0;
+}
+
+/**
+ * Being extra safe here and scoping this to the add view wizard form (where
+ * a layout problem occurs for the Display format fieldset if we don't fix its
+ * padding), but it's probably safe to just let it apply everywhere.
+ */
+
+#views-ui-add-form fieldset fieldset .fieldset-wrapper {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.views-display-tab {
+  fieldset {
+    padding: 0 12px;
+  }
+  .fieldset-wrapper {
+    padding: 10px 12px 12px;
+  }
+  fieldset.box-padding .fieldset-wrapper {
+    padding: 0;
+  }
+  legend + .fieldset-wrapper {
+    padding-top: 2.5em;
+  }
+}
+
+.views-admin .form-item label.option {
+  font-size: 1em;
+}
+
+#views-ui-preview-form {
+  .form-item label.option {
+    font-size: 1em;
+  }
+  .form-submit {
+    margin-top: 3px;
+  }
+}
+
+.views-admin input.form-submit,
+.views-ui-dialog input.form-submit,
+.views-admin a.button,
+.views-ui-dialog a.button {
+  /* LTR */
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+/* Override for a button on the edit display screen */
+
+#edit-displays-preview-controls .form-submit {
+  display: inline-block;
+
+  margin-right: 1em;
+}
+
+/* Override for filter button on the views list screen */
+
+#ctools-export-ui-list-form {
+  .form-submit {
+    margin-bottom: 0;
+  }
+  .ctools-export-ui-first-row .form-item {
+    margin-top: 3px;
+    margin-right: 5px;
+    /* LTR */
+  }
+}
+
+.form-item {
+  margin-top: 9px;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  .form-item {
+    margin-top: 9px;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.form-actions {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.form-item .form-item {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.form-radios > .form-item {
+  margin-top: 3px;
+}
+
+/* @group Dependent options
+ *
+ * Dependent options are identified in CTools dependent.js
+ */
+
+/* The .dependent-options.form-item is necessary to supercede the Seven .form-item
+ * reset declaration that sets the margin to zero.
+ */
+
+.dependent-options {
+  margin-left: 1.5em;
+  &.form-item {
+    margin-left: 1.5em;
+  }
+}
+
+.form-item-options-expose-required,
+.form-item-options-expose-label,
+.form-item-options-expose-description {
+  margin-left: 1.5em;
+}
+
+.views-admin-dependent {
+  .form-item .form-item,
+  .form-type-checkboxes,
+  .form-type-radios,
+  .dependent-options,
+  .form-item .form-item {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+  .dependent-options {
+    .form-type-select,
+    .form-type-textfield {
+      margin-top: 6px;
+      margin-bottom: 6px;
+    }
+  }
+}
+
+.form-item-options-expose-required,
+.form-item-options-expose-label,
+.form-item-options-expose-description {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.views-admin-dependent {
+  .form-type-radio,
+  .form-radios .form-item {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+}
+
+/* @end */
+
+/* @end */
+
+/* @group Lists */
+
+.views-admin {
+  ul.secondary,
+  .item-list ul {
+    margin: 0;
+    padding: 0;
+  }
+  ul.secondary {
+    clear: none;
+  }
+}
+
+.views-displays ul.secondary li {
+  a {
+    padding: 2px 7px 3px;
+  }
+  &.active a {
+    padding: 2px 7px 3px;
+
+    border: 1px solid transparent;
+    &.active {
+      padding: 2px 7px 3px;
+
+      border: 1px solid transparent;
+    }
+  }
+}
+
+.views-admin {
+  .links li {
+    padding-right: 0;
+    /* LTR */
+  }
+  .button .links li {
+    padding-right: 12px;
+    /* LTR */
+  }
+}
+
+.page-admin-structure-views #content ul.action-links {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.views-display-top {
+  ul.secondary {
+    float: left;
+
+    background-color: transparent;
+  }
+  .secondary .action-list li {
+    float: none;
+
+    margin: 0;
+  }
+}
+
+/* @end */
+
+/* @group Buttons */
+
+.ctools-button-processed {
+  ul {
+    margin: 0;
+  }
+  input.form-submit {
+    &:hover {
+      color: #0074bd;
+      background-image: none;
+      text-shadow: none;
+    }
+    &:active {
+      color: #0074bd;
+      border: medium none;
+      background: none;
+      text-shadow: none;
+    }
+  }
+}
+
+/* Override for input elements that are themed like ctools-buttons */
+
+/* @end */
+
+/* @group Tables */
+
+table {
+  td,
+  th {
+    vertical-align: top;
+  }
+}
+
+/* @end */
+
+/* @group Attachment details */
+
+#edit-display-settings-title {
+  color: #008bcb;
+}
+
+/* @end */
+
+/* @group Attachment details tabs
+ *
+ * The tabs that switch between sections
+ */
+
+.views-displays .secondary {
+  text-align: left;
+  /* LTR */
+  > li:first-child {
+    padding-left: 0;
+  }
+}
+
+.views-admin .icon.add {
+  background-position: center 3px;
+}
+
+.views-displays .secondary {
+  a {
+    color: #008bcb;
+    -webkit-border-radius: 7px;
+       -moz-border-radius: 7px;
+            border-radius: 7px;
+    background-color: #f1f1f1;
+    &:hover > .icon.add {
+      background-position: center -25px;
+    }
+  }
+  .open > a {
+    -webkit-border-radius: 7px 7px 0 0;
+       -moz-border-radius: 7px 7px 0 0;
+            border-radius: 7px 7px 0 0;
+    &:hover {
+      color: #008bcb;
+      background-color: #f1f1f1;
+    }
+  }
+  .action-list {
+    li {
+      &:first-child {
+        -webkit-border-radius: 0 7px 0 0;
+           -moz-border-radius: 0 7px 0 0;
+                border-radius: 0 7px 0 0;
+      }
+      &:last-child {
+        -webkit-border-radius: 0 0 7px 7px;
+           -moz-border-radius: 0 0 7px 7px;
+                border-radius: 0 0 7px 7px;
+      }
+    }
+    input.form-submit {
+      color: #008bcb;
+      -webkit-border-radius: 0;
+         -moz-border-radius: 0;
+              border-radius: 0;
+    }
+  }
+}
+
+/* @end */
+
+/* @group Attachment buckets
+ *
+ * These are the individual "buckets," or boxes, inside the display settings area
+ */
+
+.views-ui-display-tab-bucket {
+  h3 {
+    font-size: 12px;
+
+    text-transform: uppercase;
+  }
+  .links {
+    padding: 2px 6px 4px;
+    li + li {
+      margin-left: 3px;
+    }
+  }
+}
+
+/* @end */
+
+/* @group Rearrange filter criteria */
+
+#views-ui-rearrange-filter-form {
+  .action-links {
+    margin: 0;
+    padding: 0;
+  }
+  table,
+  [id^='views-row'] {
+    border: medium none;
+  }
+  tr td:last-child {
+    border-right: medium none;
+  }
+  .filter-group-operator-row {
+    border-right: 1px solid transparent !important;
+    border-left: 1px solid transparent !important;
+  }
+  tr {
+    &.drag td {
+      background-color: #fe7 !important;
+    }
+    &.drag-previous td {
+      background-color: #ffb !important;
+    }
+  }
+}
+
+/* @end */
+
+/* @group Live preview elements */
+
+.views-query-info {
+  pre {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  table {
+    -webkit-border-radius: 7px;
+       -moz-border-radius: 7px;
+            border-radius: 7px;
+
+    -webkit-border-horizontal-spacing: 1px;
+    -webkit-border-vertical-spacing: 1px;
+    tr td:last-child {
+      /* Fixes a Seven style that bleeds down into this table unnecessarily */
+      border-right: 0 none;
+    }
+  }
+}
+
+/* @group Query info table */
+
+/* @end */
+
+/* @end */
+
+/* @group Add view */
+
+.form-item-page-create,
+.form-item-block-create {
+  margin-top: 13px;
+}
+
+/* @end */
+
+/* @group Modal dialog box
+ *
+ * The contents of the popup dialog on the views edit form.
+ */
+
+.ui-dialog-titlebar-close {
+  top: -1px;
+  right: -27px;
+
+  border-color: #ccc;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+.views-ui-dialog fieldset {
+  &.collapsible {
+    padding-top: 1.5em;
+  }
+  &.collapsed {
+    padding-top: 2.5em;
+  }
+}
+
+.filterable-option .form-item.form-type-checkbox {
+  padding-top: 4px;
+  /* This selector is aggressive because Seven's reset for .form-items is aggressive. */
+  padding-bottom: 4px;
+  padding-left: 4px;
+}
+
+/* @end */
+
+/* @group CTools */
+
+/* @group Buttons */
+
+.ctools-button-processed {
+  -webkit-border-radius: 11px 11px 11px 11px;
+     -moz-border-radius: 11px 11px 11px 11px;
+          border-radius: 11px 11px 11px 11px;
+  background-image:    -moz-linear-gradient(-90deg, #fff 0px, #f9f9f9 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 1)), color-stop(1, rgba(249, 249, 249, 1)));
+  background-image: -webkit-linear-gradient(-90deg, #fff 0px, #f9f9f9 100%);
+  background-image:         linear-gradient(-90deg, #fff 0px, #f9f9f9 100%);
+  &:hover {
+    background-image:    -moz-linear-gradient(-90deg, #fff 0px, #f1f1f1 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 1)), color-stop(1, rgba(241, 241, 241, 1)));
+    background-image: -webkit-linear-gradient(-90deg, #fff 0px, #f1f1f1 100%);
+    background-image:         linear-gradient(-90deg, #fff 0px, #f1f1f1 100%);
+  }
+}
+
+.ctools-dropbutton-processed.open {
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .25);
+     -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, .25);
+          box-shadow: 1px 1px 2px rgba(0, 0, 0, .25);
+  &:hover {
+    background-image:    -moz-linear-gradient(-90deg, #fff 0px, #f9f9f9 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 1)), color-stop(1, rgba(249, 249, 249, 1)));
+    background-image: -webkit-linear-gradient(-90deg, #fff 0px, #f9f9f9 100%);
+    background-image:         linear-gradient(-90deg, #fff 0px, #f9f9f9 100%);
+  }
+}
+
+/* @end */
+
+/* @group Collapsible */
+
+.ctools-toggle {
+  margin-top: .6667em;
+  margin-top: 14px;
+
+  color: #008bcb;
+  &.ctools-toggle-collapsed {
+    margin-top: .5em;
+    margin-top: 12px;
+  }
+}
+
+.ctools-collapsible-handle {
+  color: #008bcb;
+}
+
+.ctools-button-processed {
+  font-size: 11px;
+
+  padding-top: 2px;
+  padding-bottom: 2px;
+
+  border-color: #ccc;
+  background-color: #fff;
+  input {
+    color: #0074bd;
+  }
+  &:hover {
+    border-color: #b8b8b8;
+  }
+  &:active {
+    border-color: #a0a0a0;
+  }
+  .ctools-content {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+/* @group Buttons */
+
+.ctools-dropbutton-processed {
+  position: absolute;
+  .ctools-content {
+    border-right: 1px solid #e8e8e8;
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.ctools-content ul.actions {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.ctools-button-processed .ctools-content a {
+  border: medium none;
+  background-image: none;
+}
+
+.ctools-dropbutton-processed {
+  &.open {
+    z-index: 100;
+    &:hover {
+      border-color: #d0d0d0;
+    }
+  }
+  .ctools-link {
+    border-left: 1px solid #fff;
+  }
+  &.open .ctools-content {
+    padding-bottom: 4px;
+  }
+  li {
+    a,
+    input {
+      padding-right: 9px;
+    }
+  }
+  &.open li + li {
+    margin-top: 4px;
+    padding-top: 4px;
+    padding-bottom: 0;
+
+    border-top: 1px solid #efefef;
+  }
+}
+
+.ctools-twisty:focus {
+  outline: medium none;
+}
+
+.ctools-no-js .ctools-content ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+#edit-sub-products .ctools-button-processed {
+  font-size: 12px;
+
+  position: absolute;
+  position: absolute;
+  top: 7px;
+  top: 4px;
+  right: 12px;
+  right: 5px;
+}
+
+.ctools-button-processed {
+  li a {
+    font-family: inherit;
+    font-size: 12px;
+
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 12px;
+
+    border: medium;
+    background: none;
+  }
+  input {
+    font-family: inherit;
+    font-size: 12px;
+
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 12px;
+
+    border: medium;
+    background: none;
+    &:hover {
+      background: none;
+    }
+  }
+}
+
+/* @end */
+
+/* @group Collapsible */
+
+.ctools-toggle {
+  display: inline-block;
+  float: left;
+
+  width: 0;
+  height: 0;
+  margin-top: .4545em;
+  margin-right: 2px;
+
+  border-width: 5px 5px 0;
+  border-style: solid;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  &.ctools-toggle-collapsed {
+    margin-top: .3333em;
+    margin-right: 5px;
+    margin-left: 2px;
+
+    border-width: 5px 0 5px 5px;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left: 4px solid;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.ctools-collapsible-handle:hover {
+  cursor: pointer;
+}
+
+.ctools-export-ui-row {
+  margin-bottom: 0;
+  padding-top: 0;
+  label {
+    display: block;
+    float: left;
+
+    width: 55px;
+  }
+}
+
+.ctools-toggle {
+  margin-top: 10px;
+  margin-right: 3px;
+  margin-left: 6px;
+
+  color: #000;
+  &.ctools-toggle-collapsed {
+    margin-top: 8px;
+    margin-right: 5px;
+    margin-left: 9px;
+  }
+}
+
+.ctools-collapsible-handle {
+  font-size: 13px;
+  font-weight: normal;
+
+  margin: 0;
+  padding: 6px 3px;
+
+  border-width: 1px 1px 0;
+  border-style: solid;
+  border-color: #f3f3f3;
+}
+
+.ctools-toggle.ctools-toggle-collapsed + .ctools-collapsible-handle {
+  border-width: 1px;
+}
+
+.ctools-collapsible-content > .views-ui-display-tab-bucket:first-child {
+  border-top: medium none;
+}
+
+h2.ctools-collapsible-handle {
+  display: inline;
+  clear: both;
+}
+
+/* @end */
+
+/* @group Dependent */
+
+.dependent-options {
+  margin-left: 18px;
+  /* LTR */
+}
+
+/* @end */
+
+/* @group Export */
+
+/* Override for filter button on the views list screen */
+
+#ctools-export-ui-list-form .form-submit {
+  margin-top: 0 !important;
+  margin-right: 0;
+}
+
+.ctools-export-ui-row + .ctools-export-ui-row {
+  margin-top: 1em;
+}
+
+.ctools-export-ui-fourth-row input {
+  margin-top: 5px !important;
+}
+
+/* @end */
+
+/* @group Jump list */
+
+.ctools-jump-menu-select {
+  max-width: 450px;
+}
+
+/* @end */
+
+/**/
+
+.element-error-description {
+  font-size: 10px;
+
+  color: red;
+}
+
+.element-validation-ok {
+  font-weight: bold;
+
+  display: inline-block;
+
+  margin-left: 5px;
+
+  color: green;
+}
+
+input:read-only {
+  background-color: #cecece;
+}
+
+#edit-barcode {
+  padding-left: 25px;
+
+  background-image: url('../img/barcode_2d.png');
+  background-repeat: no-repeat;
+  background-position: 3px center;
+}
+
+.product-barcode-label {
+  margin-top: 5px;
+  margin-left: 21px;
+  padding-left: 25px;
+
+  background-image: url('../img/barcode_2d.png');
+  background-repeat: no-repeat;
+  background-position: 3px center;
+}
+
+.product-uid-label {
+  margin-top: 5px;
+  margin-left: 21px;
+  padding-left: 25px;
+
+  background-image: url('../img/uid-icon.png');
+  background-repeat: no-repeat;
+  background-position: 3px center;
+}
+
+#edit-1c-id {
+  padding-left: 25px;
+
+  background-image: url('../img/uid-icon.png');
+  background-repeat: no-repeat;
+  background-position: 3px center;
+}
+
+.beeshop_product_edit_form input[readonly] {
+  background-color: #e1e1e1;
+}
