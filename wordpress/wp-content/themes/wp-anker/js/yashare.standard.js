@@ -1,0 +1,2 @@
+!function(a){"use strict";Drupal.yashare_standard={},Drupal.yashare_standard.initWidgets=function(r,s){a.each(s.yashare,function(s,e){a("#"+s+":not(.yashare-processed)",r).addClass("yashare-processed").each(function(){new Ya.share(e)})})},Drupal.behaviors.yashare_standard={},Drupal.behaviors.yashare_standard.attach=function(a,r){Drupal.yashare.initialize(Drupal.yashare_standard.initWidgets,a,r)}}(jQuery);
+//# sourceMappingURL=maps/yashare.standard.js.map

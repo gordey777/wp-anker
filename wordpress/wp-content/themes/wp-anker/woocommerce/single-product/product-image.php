@@ -20,33 +20,42 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-global $post, $product;
-?>
-<div class="images">
-	<?php
-		if ( has_post_thumbnail() ) {
-			$attachment_count = count( $product->get_gallery_attachment_ids() );
-			$gallery          = $attachment_count > 0 ? '[product-gallery]' : '';
-			$props            = wc_get_product_attachment_props( get_post_thumbnail_id(), $post );
-			$image            = get_the_post_thumbnail( $post->ID, apply_filters( 'single_product_large_thumbnail_size', 'shop_single' ), array(
-				'title'	 => $props['title'],
-				'alt'    => $props['alt'],
-			) );
-			echo apply_filters(
-				'woocommerce_single_product_image_html',
-				sprintf(
-					'<a href="%s" itemprop="image" class="woocommerce-main-image zoom" title="%s" data-rel="prettyPhoto%s">%s</a>',
-					esc_url( $props['url'] ),
-					esc_attr( $props['caption'] ),
-					$gallery,
-					$image
-				),
-				$post->ID
-			);
-		} else {
-			echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<img src="%s" alt="%s" />', wc_placeholder_img_src(), __( 'Placeholder', 'woocommerce' ) ), $post->ID );
-		}
+global $post, $product; ?>
 
-		do_action( 'woocommerce_product_thumbnails' );
-	?>
-</div>
+  <div id="image-block" class="clearfix">
+    <div class="conditions-box">
+      <p class="new">New</p>
+    </div>
+      <span id="view_full_size">
+      <?php if ( has_post_thumbnail()) : ?>
+        <img src="<?php echo get_the_post_thumbnail_url( '', 'full' ); ?>" id="bigpic" itemprop="image" title="<?php the_title(); ?>" alt="<?php the_title(); ?>">
+        <span class="span_link no-print"></span>
+      <?php else:?>
+        <?php echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<img src="%s" alt="%s" />', wc_placeholder_img_src(), __( 'Placeholder', 'woocommerce' ) ), $post->ID ); ?>
+      <?php endif; ?>
+    </span>
+  </div><!-- .image-block -->
+  <div id="views_block" class="clearfix">
+    <div id="thumbs_list">
+      <ul id="thumbs_list_frame">
+        <?php if ( has_post_thumbnail()) : ?>
+          <li id="thumbnail_">
+           <a href="<?php echo get_the_post_thumbnail_url( '', 'full' ); ?>" data-fancybox-group="other-views" class="fancybox " data-rel="prettyPhoto[product-gallery]">
+            <img src="<?php echo get_the_post_thumbnail_url( '', 'full' ); ?>" id="bigpic" itemprop="image" title="<?php the_title(); ?>" alt="<?php the_title(); ?>">
+          </a>
+         </li>
+        <?php else:?>
+        <?php endif; ?>
+
+        <?php do_action( 'woocommerce_product_thumbnails' ); ?>
+      </ul>
+      <div class="owl-controls">
+        <div class="owl-nav">
+          <div class="owl-prev"><i class="icon-angle-downn"></i></div>
+          <div class="owl-next"><i class="icon-angle-upp"></i></div>
+        </div>
+      </div>
+    </div>
+  </div><!-- .views_block -->
+
+

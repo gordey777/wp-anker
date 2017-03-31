@@ -24,8 +24,14 @@ global $product;
 
 ?>
 <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+  <div class="beeshop-product-price-field">
+    <div class="product-price-values-wrapper">
+      <div class="product-price actual-product-price">
+        <span class="price-value"><?php echo $product->get_price_html(); ?></span>
+      </div>
+    </div>
+  </div>
 
-	<p class="price"><?php echo $product->get_price_html(); ?></p>
 
 	<meta itemprop="price" content="<?php echo esc_attr( $product->get_display_price() ); ?>" />
 	<meta itemprop="priceCurrency" content="<?php echo esc_attr( get_woocommerce_currency() ); ?>" />

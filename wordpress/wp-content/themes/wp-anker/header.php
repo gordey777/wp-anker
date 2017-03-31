@@ -110,5 +110,27 @@
       </div>
     </div>
   </header>
-
+  <div id="page" class="clearfix">
+    <div id="left-mobile-menu-wrapper">
+      <div class="region region-mobile-menu">
+        <section id="block-menu-menu-mobile-menu" class="block block-menu">
+          <div class="content">
+            <nav>
+              <ul class="menu">
+                <li class="first leaf mlid-1389"><a href="http://anker-company.com/shop/wetsuits" title="">Гидрокостюмы</a></li>
+                <li class="leaf mlid-1390"><a href="http://anker-company.com/shop/wear" title="">Одежда</a></li>
+                <li class="leaf mlid-1388"><a href="http://anker-company.com/shop/surfboards" title="">Серфборды</a></li>
+                <li class="leaf mlid-1387"><a href="http://anker-company.com/shop/skateboards" title="">Скейтборды</a></li>
+                <li class="leaf mlid-2990"><a href="http://anker-company.com/sale.html" title="">SALE</a></li>
+                <li class="leaf mlid-1392"><a href="http://anker-company.com/about" title="">О нас</a></li>
+                <li class="leaf mlid-1393"><a href="http://anker-company.com/payment" title="">Оплата</a></li>
+                <li class="leaf mlid-1394"><a href="http://anker-company.com/delivery" title="">Доставка</a></li>
+                <li class="leaf mlid-1395"><a href="http://anker-company.com/chargeback" title="">Возврат</a></li>
+                <li class="last leaf mlid-1396"><a href="http://anker-company.com/contacts" title="">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+      </div>
+    </div>
 

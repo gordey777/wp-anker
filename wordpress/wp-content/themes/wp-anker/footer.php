@@ -1,3 +1,4 @@
+    </div><!-- #page -->
   <footer>
     <div id="footer-middle">
       <div class="sheet-wrapper">
@@ -58,6 +59,8 @@
 
     <?php wp_footer(); ?>
 
+
+
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.once.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/drupal.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.colorbox.js"></script>
@@ -71,5 +74,10 @@
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/proxyButton.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/owl.carousel.min.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/fulWidthSliderInit.js"></script>
+
+  <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.elevatezoom.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.jcarousellite.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/product-image-thumb.js"></script>
+
 </body>
 </html>

@@ -3749,7 +3749,7 @@ a {
   }
   .field-name-product-sku-field {
     font-size: 16px;
-    font-weight: 300px;
+    font-weight: 300;
 
     display: -webkit-flex;
     display:         flex;
@@ -4711,6 +4711,7 @@ footer .sheet-wrapper {
   }
 }
 
+.woocommerce-Price-currencySymbol,
 .currency-label {
   font-family: Tahoma, TahomaWeb;
   font-size: .95em;

@@ -1,0 +1,2 @@
+!function(e){e(document).ready(function(){"undefined"!=typeof e.fn.lightGallery&&e(".beeshop-product .field-name-beeshop-product-image .field-items").lightGallery({thumbnail:!0,animateThumb:!1,showThumbByDefault:!1,selector:".field-item a",hash:!1}),"undefined"!=typeof e.fn.owlCarousel&&e(".beeshop-product .field-name-beeshop-product-image .field-items").owlCarousel({slideBy:1,items:1,animateOut:"fadeOut",thumbs:!0,thumbImage:!0})})}(jQuery);
+//# sourceMappingURL=maps/productImageLightGaleryInit.js.map
