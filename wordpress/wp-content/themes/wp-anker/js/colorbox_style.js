@@ -1,0 +1,2 @@
+!function(o){Drupal.behaviors.initColorboxDefaultStyle={attach:function(e,i){o(e).bind("cbox_complete",function(){0==o("#cboxTitle:empty",e).length?(o("#cboxLoadedContent img",e).bind("mouseover",function(){o("#cboxTitle",e).slideDown()}),o("#cboxOverlay",e).bind("mouseover",function(){o("#cboxTitle",e).slideUp()})):o("#cboxTitle",e).hide()})}}}(jQuery);
+//# sourceMappingURL=maps/colorbox_style.js.map

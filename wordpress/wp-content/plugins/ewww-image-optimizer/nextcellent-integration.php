@@ -181,7 +181,7 @@ class ewwwngg {
 //			$skip = ewww_image_optimizer_skip_tools();
 			if ( ! defined( 'EWWW_IMAGE_OPTIMIZER_JPEGTRAN' ) ) {
 				ewww_image_optimizer_tool_init();
-				ewww_image_optimizer_notice_utils( false );
+				ewww_image_optimizer_notice_utils( 'quiet' );
 			}
 	                switch ( $type ) {
         	                case 'image/jpeg':
@@ -391,7 +391,7 @@ class ewwwngg {
 		// store the image IDs to process in the db
 		update_option('ewww_image_optimizer_bulk_ngg_attachments', $images, false);
 		// add the EWWW IO script
-		wp_enqueue_script( 'ewwwbulkscript', plugins_url( '/includes/eio.js', __FILE__ ), array( 'jquery', 'jquery-ui-progressbar', 'jquery-ui-slider', 'postbox', 'dashboard' ) );
+		wp_enqueue_script( 'ewwwbulkscript', plugins_url( '/includes/eio.js', __FILE__ ), array( 'jquery', 'jquery-ui-progressbar', 'jquery-ui-slider', 'postbox', 'dashboard' ), EWWW_IMAGE_OPTIMIZER_VERSION );
 		// replacing the built-in nextgen styling rules for progressbar
 		wp_register_style( 'ngg-jqueryui', plugins_url( '/includes/jquery-ui-1.10.1.custom.css', __FILE__ ) ); 
 		// enqueue the progressbar styling
@@ -491,13 +491,16 @@ class ewwwngg {
 			die();
 		}
 		// output the results of the optimization
-		$output['results'] = sprintf( "<p>" . esc_html__('Optimized image:', EWWW_IMAGE_OPTIMIZER_DOMAIN) . " <strong>%s</strong><br>", esc_html( $fres[0] ) );
+		if ( $fres[0] ) {
+			$output['results'] = sprintf( "<p>" . esc_html__('Optimized image:', EWWW_IMAGE_OPTIMIZER_DOMAIN) . " <strong>%s</strong><br>", esc_html( $fres[0] ) );
+		}
 		$output['results'] .= sprintf( esc_html__( 'Full size - %s', EWWW_IMAGE_OPTIMIZER_DOMAIN ) . "<br>", esc_html( $fres[1] ) );
 		// output the results of the thumb optimization
 		$output['results'] .= sprintf( esc_html__( 'Thumbnail - %s', EWWW_IMAGE_OPTIMIZER_DOMAIN ) . "<br>", esc_html( $tres[1] ) );
 		// outupt how much time we spent
 		$elapsed = microtime( true ) - $started;
 		$output['results'] .= sprintf( esc_html__( 'Elapsed: %.3f seconds', EWWW_IMAGE_OPTIMIZER_DOMAIN ) . "</p>", $elapsed);
+		$output['completed'] = 1;
 		//store the list back in the db
 		update_option( 'ewww_image_optimizer_bulk_ngg_attachments', $attachments, false );
 		if ( ! empty( $attachments ) ) {
@@ -509,9 +512,10 @@ class ewwwngg {
                         } else {
                                 $output['next_file'] =  "<p>" . esc_html__('Optimizing', EWWW_IMAGE_OPTIMIZER_DOMAIN) . "&nbsp;<img src='$loading_image' alt='loading'/></p>";
                         }
-                }
-                echo json_encode( $output );
-		die();
+                } else {
+			$output['done'] = 1;
+		}
+                die( json_encode( $output ) );
 	}
 
 	/* finish the bulk operation */
